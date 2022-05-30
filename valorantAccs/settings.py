@@ -67,7 +67,18 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://valorant-accs-frontend.herokuapp.com',
+    'http://valorant-accs-frontend.herokuapp.com',
+    'https://valorant-accs-frontend.herokuapp.com/',
+    'http://valorant-accs-frontend.herokuapp.com/'
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'https://valorant-accs-frontend.herokuapp.com',
+    'http://valorant-accs-frontend.herokuapp.com',
+    'https://valorant-accs-frontend.herokuapp.com/',
+    'http://valorant-accs-frontend.herokuapp.com/'
 ]
 
 ROOT_URLCONF = 'valorantAccs.urls'
@@ -161,6 +172,8 @@ DATE_FORMAT = "Y-m-d"
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1)
 }
+
+STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 import dj_database_url
 prod_db=dj_database_url.config(conn_max_age=500)
