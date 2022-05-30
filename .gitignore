@@ -1,0 +1,30 @@
+/venv/
+.idea/
+*/.idea/
+.vscode/
+
+frontend/
+
+*.py[cod]
+*$py.class
+
+# General
+*.log
+*.pdf
+*.png
+
+# IDE
+.idea/ # PyCharm settings
+.vscode/ # VSCode settings
+
+# Python
+# *.pyc
+env/
+venv/
+.env
+.venv
+
+
+# JavaScript
+node_modules/
+build/ # Webpack build output

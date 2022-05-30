@@ -1,0 +1,1 @@
+web: gunicorn valorantAccs.wsgi --log-file -
