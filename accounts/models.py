@@ -5,7 +5,7 @@ from django.db import models
 # Create your models here.
 class MyUserManager(UserManager):
     def get_by_natural_key(self, username):
-        case_insensitive_name = '{}_iexact'.format(self.model.USERNAME_FIELD)
+        case_insensitive_name = '{}__iexact'.format(self.model.USERNAME_FIELD)
         return self.get(**{case_insensitive_name: username})
 
 
