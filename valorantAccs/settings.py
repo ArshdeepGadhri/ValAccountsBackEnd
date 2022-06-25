@@ -69,9 +69,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
     'http://localhost:3000',
     'https://valorant-accs-frontend.herokuapp.com',
-    'http://valorant-accs-frontend.herokuapp.com',
-    'https://valorant-accs-frontend.herokuapp.com/',
-    'http://valorant-accs-frontend.herokuapp.com/'
+    'http://valorant-accs-frontend.herokuapp.com'
 ]
 
 CORS_ORIGIN_WHITELIST = [

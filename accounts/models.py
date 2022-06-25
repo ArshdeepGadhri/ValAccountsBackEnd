@@ -34,7 +34,7 @@ class CustomUser(AbstractUser):
 
 class ValorantAccount(models.Model):
     owner = models.ForeignKey(to=CustomUser, on_delete=models.CASCADE, default='N/A')
-    username = models.CharField(max_length=100, help_text='Valorant Account Username')
+    username = models.CharField(max_length=100, help_text='Valorant Account Username', unique=True)
     password = models.CharField(max_length=100, help_text='Valorant Account Password')
     riot_id = models.CharField(max_length=100, help_text='Valorant In Game Name (riot ID)', null=True, blank=True)
     tagline = models.CharField(max_length=100, help_text='Valorant In Game Tag', null=True, blank=True)
