@@ -61,7 +61,6 @@ class ValorantAccountList(ListAPIView):
     def get_queryset(self):
         return ValorantAccount.objects.all().filter(owner=self.request.user)
 
-
 class ValorantAdminAccountList(ListAPIView):
     query_set = ValorantAccount.objects.all()
     serializer_class = ValorantSerializer

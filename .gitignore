@@ -11,7 +11,6 @@ frontend/
 # General
 *.log
 *.pdf
-*.png
 
 # IDE
 .idea/ # PyCharm settings
@@ -19,9 +18,7 @@ frontend/
 
 # Python
 # *.pyc
-env/
 venv/
-.env
 .venv
 
 

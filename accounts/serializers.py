@@ -67,6 +67,7 @@ class ValorantSerializer(ModelSerializer):
 
         owner = representation['owner']
         representation['created_at'] = representation['created_at'][:10]
+        representation['test'] = 'testing'
         representation['updated_at'] = representation['updated_at'][:10]
         representation['owner'] = OrderedDict([
             ('id', owner.get('id')),

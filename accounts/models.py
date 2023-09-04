@@ -41,6 +41,7 @@ class ValorantAccount(models.Model):
     rank = models.CharField(max_length=100, help_text='Valorant In Game Rank', default='Unranked')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    notes = models.CharField(max_length=2000, help_text="Notes", null=True, blank=True)
 
     class Meta:
         ordering = ['username']
