@@ -66,14 +66,16 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
     'http://localhost:3000',
-    "http://3.22.233.205"
+    "http://3.22.233.205",
+    "http://valaccs.69.mu"
 ]
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:8000',
     'http://localhost:3000',
     "http://3.22.233.205",
-    "http://3.22.233.205/"
+    "http://3.22.233.205/",
+    "http://valaccs.69.mu"
 ]
 
 ROOT_URLCONF = 'valorantAccs.urls'
