@@ -66,16 +66,15 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
     'http://localhost:3000',
-    'https://valorant-accs-frontend.herokuapp.com',
-    'http://valorant-accs-frontend.herokuapp.com',
-    "http://13.59.235.38"
+    "http://3.22.233.205",
+    "http://3.22.233.205/"
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'https://valorant-accs-frontend.herokuapp.com',
-    'http://valorant-accs-frontend.herokuapp.com',
-    'https://valorant-accs-frontend.herokuapp.com/',
-    'http://valorant-accs-frontend.herokuapp.com/'
+    'http://localhost:8000',
+    'http://localhost:3000',
+    "http://3.22.233.205",
+    "http://3.22.233.205/"
 ]
 
 ROOT_URLCONF = 'valorantAccs.urls'
